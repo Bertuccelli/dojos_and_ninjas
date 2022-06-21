@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Show</title>
+</head>
+
+
+<body>
+
+
+    {% for element in single_dojo %}
+<h2>{{element.name}} Ninjas</h2>
+{% endfor %}
+<table>
+    <tr>
+        <th> First Name: </th>
+        <th> Last Name: </th>
+        <th> Age: </th>
+    </tr>
+    {% for element in list_of_ninjas %}
+    <tr>
+        <td>{{element.first_name}}</td>
+        <td>{{element.last_name}}</td>
+        <td>{{element.age}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+<!-- table with first name, last name, age of ninjas in that particular dojo -->
+
+
+<a href="/dojos">Home</a>
+</body>
+</html>
